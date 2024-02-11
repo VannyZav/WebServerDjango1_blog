@@ -5,10 +5,21 @@
     <body>
         <div>
             <h2><a href="https://t.me/vanyazavr">Vannyazav telegram</a></h2>
+            {% for post in posts %}
+            <div>
+                <ul>
+                    <li>
+                        <h4><a href="">{{ post.title }}</a></h4>
+                        <p>{{ post.published_date }}</p>
+                        <p>{{ post.text|linebreaksbr }}</p>
+                    </li>
+                </ul>
+            </div>
+            {% endfor %}
             <p><strong>знаете что?</strong> <em>пишите мне по таким поводам:</em></p>
             <ul>
                 <li>if you are a potato</li>
-                <li>if youq
+                <li>if you
                     are not a potato</li>
             </ul>
         </div>
