@@ -8,8 +8,11 @@
  - clone this repository
  - create virtualenv
  - install requirements.txt
- - write in shell: python manage.py runserver
-
+ - make migrations: write in shell: python manage.py makemigrations
+ => python manage.py migrate
+ - run server => write in shell: python manage.py runserver
+ - create super user: python manage.py createsuperuser
+   
 ### you can:
  - create new post
  - edit your post
